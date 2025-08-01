@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #00CED1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    color: #FFD700;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00CED1;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #FFA500;
+    font-size: 1.5em;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.contact a {
+    color: #00CED1;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.equation {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: #00CED1;
+}
+
+a:hover {
+    color: #FFD700;
+}
