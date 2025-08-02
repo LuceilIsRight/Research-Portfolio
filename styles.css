@@ -129,7 +129,7 @@ aside h2 {
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
     height: 2px;
     width: 100px;
-    transform: rotate(45deg); /* Diagonal orientation */
+    transform-origin: left top;
     animation: streakMoveDiagonal 2s linear forwards;
 }
 
@@ -154,7 +154,7 @@ footer p {
 
 @keyframes streakMoveDiagonal {
     0% {
-        transform: translate(-100vw, -100vh) rotate(45deg);
+        transform: translate(0, 0) rotate(45deg);
         opacity: 0;
     }
     20% {
