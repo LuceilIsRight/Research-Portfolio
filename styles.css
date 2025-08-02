@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at top, #0a1f2d, #000000);
+    background: linear-gradient(180deg, #0a1f2d, #1a2a44);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -11,39 +11,35 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: #0a1f2d;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     color: #00CED1;
-    font-size: 2.5em;
-    margin: 0;
-    text-shadow: 0 0 10px #00CED1;
+    font-size: 1.8em;
+    margin: 0 10px;
+    text-shadow: 0 0 5px #00CED1;
 }
 
 header .profile {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 10px;
 }
 
 header .profile-img {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: 2px solid #00CED1;
-    box-shadow: 0 0 15px rgba(0, 206, 209, 0.5);
-    transition: transform 0.3s ease;
-}
-
-header .profile-img:hover {
-    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0, 206, 209, 0.5);
 }
 
 main {
@@ -54,31 +50,29 @@ main {
 
 aside {
     width: 25%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
     z-index: 10;
-    border-radius: 10px;
 }
 
 aside h2 {
     color: #FFD700;
-    font-size: 1.6em;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 15px;
     text-shadow: 0 0 5px #FFD700;
 }
 
 .project-card {
-    margin-bottom: 25px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #1a2a44;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 206, 209, 0.3);
+    transform: translateY(-3px);
 }
 
 .project-card img {
@@ -89,61 +83,38 @@ aside h2 {
 }
 
 .project-card h3 {
-    color: #FFA500;
-    font-size: 1.3em;
-    margin: 10px 0;
-    text-shadow: 0 0 3px #FFA500;
+    color: #FFD700;
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
 .project-card p {
     margin: 5px 0;
-    color: #ccc;
+    color: #00CED1;
+    font-size: 0.9em;
 }
 
 .project-card ul {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .project-card ul a {
     color: #00CED1;
     text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #00CED1;
-    border-radius: 5px;
-    transition: color 0.3s ease, background 0.3s ease;
+    font-size: 0.9em;
 }
 
 .project-card ul a:hover {
     color: #FFD700;
-    background: rgba(0, 206, 209, 0.2);
 }
 
 .background {
     flex: 1;
     position: relative;
     overflow: hidden;
-}
-
-.planet {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 350px;
-    height: 350px;
-    background: radial-gradient(circle, #1e90ff, #000080, #000000);
-    border-radius: 50%;
-    filter: blur(15px);
-    animation: pulse 10s infinite alternate;
-    z-index: 1;
-}
-
-@keyframes pulse {
-    0% { transform: translateX(-50%) scale(1); }
-    100% { transform: translateX(-50%) scale(1.1); }
 }
 
 .star {
@@ -155,10 +126,10 @@ aside h2 {
 
 footer {
     text-align: center;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: auto;
+    padding: 10px;
+    background: #0a1f2d;
     z-index: 10;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
 
 footer p {
