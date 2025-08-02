@@ -1,78 +1,118 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://www.physics.ox.ac.uk/sites/default/files/styles/meta_twitter_card/public/news_images/jwst-galaxy-ngc1512.jpg?itok=C9pr-cVJ') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
     margin: 0;
+    padding: 0;
+    background: #0a1f2d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
     padding: 20px;
-    line-height: 1.6;
-}
-
-h1 {
-    color: #00CED1;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px #000;
-}
-
-h2 {
-    color: #FFD700;
-    font-size: 1.8em;
-    border-bottom: 2px solid #00CED1;
-    padding-bottom: 5px;
-}
-
-h3 {
-    color: #FFA500;
-    font-size: 1.5em;
-}
-
-.contact {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.1em;
-}
-
-.contact a {
-    color: #00CED1;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-.section {
     background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 20px;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+header h1 {
+    color: #00CED1;
+    font-size: 2em;
+    margin: 0;
 }
 
-.equation {
-    font-size: 1.8em;
-    text-align: center;
-    margin: 20px 0;
+header .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+header .profile-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    width: 25%;
     background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+aside h2 {
+    color: #FFD700;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.project-card {
+    margin-bottom: 20px;
     padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 
-p {
-    margin: 10px 0;
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-a {
+.project-card h3 {
+    color: #FFA500;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.project-card p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.project-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-card ul a {
     color: #00CED1;
+    text-decoration: none;
 }
 
-a:hover {
-    color: #FFD700;
+.project-card ul a:hover {
+    text-decoration: underline;
+}
+
+.background {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.planet {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #1e90ff, #000080);
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: auto;
 }
