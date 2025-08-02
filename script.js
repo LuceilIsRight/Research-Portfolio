@@ -14,8 +14,9 @@ function createStar() {
 function createStreak() {
     const streak = document.createElement('div');
     streak.className = 'streak';
+    streak.style.left = `${Math.random() * 75}vw`; // Start within 75% to avoid aside
     streak.style.top = `${Math.random() * 100}vh`;
-    streak.style.height = `${Math.random() * 3 + 1}px`;
+    streak.style.width = `${Math.random() * 150 + 50}px`; // Variable length
     document.querySelector('.background').appendChild(streak);
 
     streak.addEventListener('animationend', () => streak.remove());
