@@ -137,13 +137,11 @@ aside h2 {
     animation: twinkle 2s infinite alternate;
 }
 
-.streak {
+.moving-image {
     position: absolute;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-    height: 2px;
-    width: 100px;
-    transform-origin: left top;
-    animation: streakMoveDiagonal 2s linear forwards;
+    width: 100px; /* Adjust based on your image size */
+    height: auto;
+    animation: moveTopToBottom 5s linear forwards;
 }
 
 footer {
@@ -153,18 +151,6 @@ footer {
     z-index: 10;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
     position: relative;
-}
-
-footer .astronomer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
-    background: url('https://via.placeholder.com/100x100.png?text=Astronomer+with+Telescope') no-repeat center;
-    background-size: contain;
-    animation: lookUp 4s infinite alternate;
 }
 
 footer p {
@@ -194,7 +180,16 @@ footer p {
     }
 }
 
-@keyframes lookUp {
-    0% { transform: translateX(-50%) rotate(0deg); }
-    100% { transform: translateX(-50%) rotate(10deg); }
+@keyframes moveTopToBottom {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
 }
